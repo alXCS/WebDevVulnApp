@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+<div class="login_section" id="log_in">
+<h4> LOGIN </h4>
+<form action="/vulnapp/login_handler.php" method="post">
+    <p><strong>Username:</strong>
+    <input type="text" name="username" value=""> </p>
+    <p><strong>Password:</strong>
+    <input type="password" name="password" value=""> </p>
+    <input type="hidden" name="lang" value="english">
+    <p><strong>submit:</strong>
+    <input type="submit" name="submit" value="send"></p>
+    <p> Remember me:<input type="checkbox" name="remember" /></p>
+
+</form>
+</div>
+    <p>
+        If you dont have an account consider to <a href=/vulnapp/register_form.html> register </a>
+    </p>
+    <hr>
+    <div class="Selection">
+        <div name="english_lang" id="eng">
+            <a href="/vulnapp/login_form.html">
+                <image src="/vulnapp/pictures/english.png" alt="english" height="40" width="40">
+            </a>
+        </div>
+        
+        <div name="greek_lang" id="gr">
+            <a href="/vulnapp/lang_gr/login_form.html">
+                <image src="/vulnapp/pictures/greek.png" alt="greek" height="40" width="40" >
+            </a>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
